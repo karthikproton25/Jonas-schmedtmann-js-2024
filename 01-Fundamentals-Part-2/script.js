@@ -194,7 +194,7 @@ if (friends.includes("Steven")) {
   console.log("You have a friend called Steven");
 }
 
-// Coding challenge
+// Coding challenge 2
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
@@ -222,3 +222,74 @@ const jonas = {
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
 };
+
+// Dot vs. Bracket Notation
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
+console.log(jonas);
+
+console.log(jonas.lastName);
+console.log(jonas["lastName"]);
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+
+// console.log(jonas.'last' + nameKey)
+
+const interestedIn = prompt(
+  "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
+);
+
+if (jonas[interestedIn]) {
+  console.log(jonas[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between firstName, lastName, age, job, and friends"
+  );
+}
+
+jonas.location = "Portugal";
+jonas["twitter"] = "@jonasschmedtman";
+console.log(jonas);
+
+// Object Methods
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  birthYeah: 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicense: true,
+
+  calcAge: function (birthYeah) {
+     return 2037 - birthYeah;
+   }
+
+   calcAge: function () {
+     console.log(this);
+    return 2037 - this.birthYeah;
+   }
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYeah;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+  }
+};
+
+console.log(jonas.calcAge());
+
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+// Coding Challenge #3
