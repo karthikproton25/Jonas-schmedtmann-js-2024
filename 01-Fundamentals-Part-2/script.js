@@ -1,46 +1,46 @@
 "use strict";
 
-// let hasDriversLicense = false;
-// const passTest = true;
+let hasDriversLicense = false;
+const passTest = true;
 
-// if (passTest) hasDriversLicense = true;
-// if (hasDriversLicense) console.log("I can drive :D");
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log("I can drive :D");
 
-// const interface = "Audio";
-// const private = 534;
+const interface = "Audio";
+const private = 534;
 
-// function logger() {
-//   console.log("My name is Jonas");
-// }
+function logger() {
+  console.log("My name is Jonas");
+}
 
-// logger();
-// logger();
-// logger();
+logger();
+logger();
+logger();
 
-// function fruitProcessor(apples, oranges) {
-//   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-//   return juice;
-// }
+function fruitProcessor(apples, oranges) {
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
 
-// const appleJuice = fruitProcessor(5, 0);
-// console.log(appleJuice);
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
 
-// const appleOrangeJuice = fruitProcessor(2, 4);
-// console.log(appleOrangeJuice);
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
 
-// const num = Number("23");
+const num = Number("23");
 
-// function calcAge1(birthYeah) {
-//   return 2037 - birthYeah;
-// }
-// const age1 = calcAge1(1991);
+function calcAge1(birthYeah) {
+  return 2037 - birthYeah;
+}
+const age1 = calcAge1(1991);
 
-// const calcAge2 = function (birthYeah) {
-//   return 2037 - birthYeah;
-// };
-// const age2 = calcAge2(1991);
+const calcAge2 = function (birthYeah) {
+  return 2037 - birthYeah;
+};
+const age2 = calcAge2(1991);
 
-// console.log(age1, age2);
+console.log(age1, age2);
 
 const calcAge3 = (birthYeah) => 2037 - birthYeah;
 const age3 = calcAge3(1991);
@@ -55,3 +55,16 @@ const yearsUntilRetirement = (birthYeah, firstName) => {
 
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1980, "Bob"));
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+}
+console.log(fruitProcessor(2, 3));
