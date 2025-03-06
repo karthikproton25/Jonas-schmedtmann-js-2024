@@ -161,3 +161,13 @@ const ages = [
   calcAge(years[years.length - 1]),
 ];
 console.log(ages);
+
+// Basic Array Operations - Add elements
+const friends = ["Michael", "Steven", "Peter"];
+
+const newLength = friends.push("Jay");
+console.log(friends);
+console.log(newLength);
+
+friends.unshift("John");
+console.log(friends);
