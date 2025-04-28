@@ -270,70 +270,26 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
   console.log("No one wins the trophy 😭");
 }
 ////////////////////////////////
-const day = "friday";
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
 
-switch (day) {
-  case "monday": // day === 'monday'
-    console.log("Plan course structure");
-    console.log("Go to coding meetup");
-    break;
-  case "tuesday":
-    console.log("Prepare theory videos");
-    break;
-  case "wednesday":
-  case "thursday":
-    console.log("Write code examples");
-    break;
-  case "friday":
-    console.log("Record videos");
-    break;
-  case "saturday":
-  case "sunday":
-    console.log("Enjoy the weekend :D");
-    break;
-  default:
-    console.log("Not a valid day!");
-}
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
 
-if (day === "monday") {
-  console.log("Plan course structure");
-  console.log("Go to coding meetup");
-} else if (day === "tuesday") {
-  console.log("Prepare theory videos");
-} else if (day === "wednesday" || day === "thursday") {
-  console.log("Write code examples");
-} else if (day === "friday") {
-  console.log("Record videos");
-} else if (day === "saturday" || day === "sunday") {
-  console.log("Enjoy the weekend :D");
-} else {
-  console.log("Not a valid day!");
-}
-///////////////////////////////////
-3 + 4;
-1991;
-true && false && !false;
+const y = new Array(1991, 1984, 2008, 2020);
 
-if (23 > 10) {
-  const str = "23 is bigger";
-}
+console.log(friends[0]);
+console.log(friends[2]);
 
-const me = "Jonas";
-console.log(`I'm ${2037 - 1991} years old ${me}`);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
 
-////////////////////////////////////
-const age = 23;
+friends[2] = "Jay";
+console.log(friends);
 
-const drink = age >= 18 ? "wine 🍷" : "water 💧";
-console.log(drink);
-
-let drink2;
-if (age >= 18) {
-  drink2 = "wine 🍷";
-} else {
-  drink2 = "water 💧";
-}
-console.log(drink2);
-
-console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
-////////////////////////////////////
+const firstName = "Jonas";
+const jonas = [firstName, "Schmedtmann", 2037 - 1991, "teacher", friends];
+console.log(jonas);
+console.log(jonas.length);
+///////////////////////////////
