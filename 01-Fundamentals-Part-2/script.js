@@ -301,8 +301,6 @@ john.calcBMI();
 
 console.log(mark.bmi, john.bmi);
 
-// "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
-
 if (mark.bmi > john.bmi) {
   console.log(
     `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`
@@ -311,4 +309,10 @@ if (mark.bmi > john.bmi) {
   console.log(
     `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`
   );
+}
+
+// Iteration: The for Loop
+
+for (let rep = 1; rep <= 30; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
